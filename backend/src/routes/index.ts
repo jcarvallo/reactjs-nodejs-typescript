@@ -1,3 +1,3 @@
-export { default as ProductRoutes } from "./product.routes"; 
+export { default as productRoutes } from "./product.routes"; 
 
 

@@ -7,9 +7,10 @@ export async function startConnection() {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useFindAndModify:false
+    },()=>{
+      console.log('Datebase is connected');
     }
   );
-  console.log('Datebase is connected');
   
 }
 
