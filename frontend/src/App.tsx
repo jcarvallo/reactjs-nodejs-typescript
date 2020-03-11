@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import TableList from './Table';
+
+
 
 const App: React.FC = () => {
+
+  let data = [
+    { id: 1, firstname: 'Mark', lastname: 'Otto', username: '@mdo' },
+    { id: 2, firstname: 'Jacob', lastname: 'Thornton', username: '@fat' }, 
+    { id: 3, firstname: 'Larry', lastname: 'the Bird', username: '@twitter' }
+  ]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <TableList data={data} />
+    </>
   );
 }
 
